@@ -1,13 +1,18 @@
 
 <html>
-
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
 <body>
-<p style="text-align: center;"><strong>CLASSIFICATION PROBLEMS IN MACHINE LEARNING&nbsp;</strong></p>
+<h2 style="text-align: center;"><strong>CLASSIFICATION PROBLEMS IN MACHINE LEARNING&nbsp;</strong></h2>
 <p style="text-align: center;"><strong><img src="https://cdn-images-1.medium.com/max/1200/1*QXttMMjauSK-XJ04AJBYsg.png" alt="" width="287" height="191" /></strong></p>
+<h3 style="text-align: center;"><strong>This app demonstrates how machine learning models could be hosted on Heroku as REST APIs. Downstream applications could use the APIs to make predictions.</strong></h3>
+<hr />
+<ul style="list-style-type: circle;">
+<li><span style="color: #ff0000;"><strong>To access the non-API UI based version of the app, click <a style="color: #ff0000;" href="https://github.com/kaul-vineet/SalaryEstimation">here</a>.&nbsp;</strong></span></li>
+</ul>
+<hr />
+<p style="text-align: center;"><span style="text-decoration: underline;"><strong>GENERAL INSTRUCTIONS ON HOW TO USE/DEMO PREDICTION API:</strong></span></p>
 <ul style="list-style-type: circle;">
 <li style="text-align: left;"><strong>This app is a HEROKU hosted prediction model for estimating salary from demographic features?</strong></li>
 </ul>
@@ -27,78 +32,108 @@
 <ul style="list-style-type: circle;">
 <li><strong>The list below provides a definition of <a href="https://en.wikipedia.org/wiki/Feature_(machine_learning)">features</a> and permissible values.</strong></li>
 </ul>
-<table style="width: 530.6px; height: 210px; border-color: white; background-color: blue; margin-left: auto; margin-right: auto;">
+<table style="width: 547px; height: 210px; border-color: white; background-color: #1d2642; margin-left: auto; margin-right: auto;" border="5" cellpadding="5">
 <tbody>
 <tr>
 <td style="width: 155px; text-align: center;"><span style="color: #ffffff;"><strong>Feature Name</strong></span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;"><strong>Values</strong></span></td>
-<td style="width: 112.6px; text-align: center;"><span style="color: #ffffff;"><strong>Comments</strong></span></td>
+<td style="width: 139px; text-align: center;"><span style="color: #ffffff;"><strong>Comments</strong></span></td>
 </tr>
 <tr>
 <td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Age</span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0 - 99</span></td>
-<td style="width: 112.6px; text-align: center;">&nbsp;</td>
+<td style="width: 139px; text-align: center;">&nbsp;</td>
 </tr>
 <tr style="text-align: center;">
 <td style="width: 155px;"><span style="color: #ffffff;">Working Class</span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;">Federal-gov</span><br /><span style="color: #ffffff;">Local-gov</span><br /><span style="color: #ffffff;">Never-worked</span><br /><span style="color: #ffffff;">Private</span><br /><span style="color: #ffffff;">Self-emp-inc</span><br /><span style="color: #ffffff;">Self-emp-not-inc</span><br /><span style="color: #ffffff;">State-gov</span><br /><span style="color: #ffffff;">Without-pay</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr style="text-align: center;">
 <td style="width: 155px;"><span style="color: #ffffff;">Education</span></td>
 <td style="width: 245px;"><span style="color: #ffffff;">10th</span><br /><span style="color: #ffffff;">11th</span><br /><span style="color: #ffffff;">12th</span><br /><span style="color: #ffffff;">1st-4th</span><br /><span style="color: #ffffff;">5th-6th</span><br /><span style="color: #ffffff;">7th-8th</span><br /><span style="color: #ffffff;">9th</span><br /><span style="color: #ffffff;">Assoc-acdm</span><br /><span style="color: #ffffff;">Assoc-voc</span><br /><span style="color: #ffffff;">Bachelors</span><br /><span style="color: #ffffff;">Doctorate</span><br /><span style="color: #ffffff;">HS-grad</span><br /><span style="color: #ffffff;">Masters</span><br /><span style="color: #ffffff;">Preschool</span><br /><span style="color: #ffffff;">Prof-school</span><br /><span style="color: #ffffff;">16 - Some-colleg</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr style="text-align: center;">
 <td style="width: 155px;"><span style="color: #ffffff;">Marital Status</span></td>
 <td style="width: 245px;"><span style="color: #ffffff;">divorced</span><br /><span style="color: #ffffff;">married</span><br /><span style="color: #ffffff;">not married</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr style="text-align: center;">
 <td style="width: 155px;"><span style="color: #ffffff;">Occupation</span></td>
 <td style="width: 245px;"><span style="color: #ffffff;">Adm-clerical</span><br /><span style="color: #ffffff;">Armed-Forces</span><br /><span style="color: #ffffff;">Craft-repair</span><br /><span style="color: #ffffff;">Exec-managerial</span><br /><span style="color: #ffffff;">Farming-fishing</span><br /><span style="color: #ffffff;">Handlers-cleaners</span><br /><span style="color: #ffffff;">Machine-op-inspct</span><br /><span style="color: #ffffff;">Other-service</span><br /><span style="color: #ffffff;">Priv-house-serv</span><br /><span style="color: #ffffff;">Prof-specialty</span><br /><span style="color: #ffffff;">Protective-serv</span><br /><span style="color: #ffffff;">Sales</span><br /><span style="color: #ffffff;">Tech-support</span><br /><span style="color: #ffffff;">Transport-moving</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr style="text-align: center;">
 <td style="width: 155px;"><span style="color: #ffffff;">Relationship</span></td>
 <td style="width: 245px;"><span style="color: #ffffff;">Husband</span><br /><span style="color: #ffffff;">Not-in-family</span><br /><span style="color: #ffffff;">Other-relative</span><br /><span style="color: #ffffff;">Own-child</span><br /><span style="color: #ffffff;">Unmarried</span><br /><span style="color: #ffffff;">Wife</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr style="text-align: center;">
 <td style="width: 155px;"><span style="color: #ffffff;">Race</span></td>
 <td style="width: 245px;"><span style="color: #ffffff;">Amer Indian Eskimo</span><br /><span style="color: #ffffff;">Asian Pac Islander</span><br /><span style="color: #ffffff;">Black</span><br /><span style="color: #ffffff;">Other</span><br /><span style="color: #ffffff;">White</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr>
 <td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Gender</span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;">Female</span><br /><span style="color: #ffffff;">Male</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr>
 <td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Capital Gain</span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0-99999</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr>
 <td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Capital Loss</span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0-99999</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr>
 <td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Hours per Week</span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0-99</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 <tr>
 <td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Native Country</span></td>
 <td style="width: 245px; text-align: center;"><span style="color: #ffffff;">Cambodia</span><br /><span style="color: #ffffff;">Canada</span><br /><span style="color: #ffffff;">China</span><br /><span style="color: #ffffff;">Columbia</span><br /><span style="color: #ffffff;">Cuba</span><br /><span style="color: #ffffff;">Dominican Republic</span><br /><span style="color: #ffffff;">Ecuador</span><br /><span style="color: #ffffff;">El Salvadorr</span><br /><span style="color: #ffffff;">England</span><br /><span style="color: #ffffff;">France</span><br /><span style="color: #ffffff;">Germany</span><br /><span style="color: #ffffff;">Greece</span><br /><span style="color: #ffffff;">Guatemala</span><br /><span style="color: #ffffff;">Haiti</span><br /><span style="color: #ffffff;">Netherlands</span><br /><span style="color: #ffffff;">Honduras</span><br /><span style="color: #ffffff;">HongKong</span><br /><span style="color: #ffffff;">Hungary</span><br /><span style="color: #ffffff;">India</span><br /><span style="color: #ffffff;">Iran</span><br /><span style="color: #ffffff;">Ireland</span><br /><span style="color: #ffffff;">Italy</span><br /><span style="color: #ffffff;">Jamaica</span><br /><span style="color: #ffffff;">Japan</span><br /><span style="color: #ffffff;">Laos</span><br /><span style="color: #ffffff;">Mexico</span><br /><span style="color: #ffffff;">Nicaragua</span><br /><span style="color: #ffffff;">Outlying-US(Guam-USVI-etc)</span><br /><span style="color: #ffffff;">Peru</span><br /><span style="color: #ffffff;">Philippines</span><br /><span style="color: #ffffff;">Poland</span><br /><span style="color: #ffffff;">Portugal</span><br /><span style="color: #ffffff;">Puerto-Rico</span><br /><span style="color: #ffffff;">Scotland</span><br /><span style="color: #ffffff;">South</span><br /><span style="color: #ffffff;">Taiwan</span><br /><span style="color: #ffffff;">Thailand</span><br /><span style="color: #ffffff;">Trinadad&amp;Tobago</span><br /><span style="color: #ffffff;">United States</span><br /><span style="color: #ffffff;">Vietnam</span><br /><span style="color: #ffffff;">Yugoslavia</span></td>
-<td style="width: 112.6px;">&nbsp;</td>
+<td style="width: 139px;">&nbsp;</td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
 <ul style="list-style-type: circle;">
-<li><strong>The image below provides a sample HTTP REST request and response.&nbsp;</strong></li>
+<li><strong>OPTIONAL: If you want to create your own HEROKU app from the repository, follow the steps below:</strong>
+<ul style="list-style-type: circle;">
+<li><strong>Click <a href="https://github.com/kaul-vineet/SalaryEstimation">GitHub - SalaryEstimation</a> to access repository for the project.</strong></li>
+<li><strong>Go to Click on the&nbsp;README.md section and click on the "Deploy to Heroku" button (referenced in blue outline below).</strong></li>
 </ul>
+</li>
+</ul>
+<p><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://github.com/kaul-vineet/SalaryEstimation/blob/master/help/Save%20To%20Heroku%20Button.png?raw=true" alt="" width="827" height="847" /></strong></p>
+<p>&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li><strong>The image below provides a sample HTTP REST request and response.&nbsp;</strong>
+<ul style="list-style-type: circle;">
+<li><strong>Call POST method "predictsalary". Reference full URL in black outline. If you have copied the repository into your own app, replace the URL/name of the app (referenced in red underline) with your app name.</strong></li>
+<li><strong>Create JSON payload with feature name/value pair.</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://github.com/kaul-vineet/SalaryEstimation/blob/master/help/REST%20Call%20Structure.png?raw=true" alt="" width="1384" height="908" /></strong></p>
+<ul style="list-style-type: circle;">
+<li><strong>The app returns two possible classification values as a response -</strong>
+<ul style="list-style-type: circle;">
+<li><strong>Income more than 50K</strong></li>
+<li><strong>Income less than 50K</strong></li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li><strong>Test and demo the model by randomly selecting sample data from&nbsp;<strong>UCI machine learning repository&nbsp;<a href="https://archive.ics.uci.edu/ml/datasets/adult">here</a>.</strong>&nbsp;</strong></li>
+</ul>
+<hr />
+<p>&nbsp;</p>
 </body>
 </html>
