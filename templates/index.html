@@ -1,150 +1,104 @@
-<html>
-<body>
-    <h3>Income Prediction Form</h3>
 
-<div>
-  <form action="/result" method="POST">
-    <label for="age">Age</label>
-    <input type="text" id="age" name="age">
-    <br>
-    <label for="w_class">Working Class</label>
-    <select id="w_class" name="w_class">
-      <option value="0">Federal-gov</option>
-      <option value="1">Local-gov</option>
-      <option value="2">Never-worked</option>
-      <option value="3">Private</option>
-      <option value="4">Self-emp-inc</option>
-      <option value="5">Self-emp-not-inc</option>
-      <option value="6">State-gov</option>
-      <option value="7">Without-pay</option>
-    </select>
-    <br>
-    <label for="edu">Education</label>
-    <select id="edu" name="edu">
-      <option value="0">10th</option>
-      <option value="1">11th</option>
-      <option value="2">12th</option>
-      <option value="3">1st-4th</option>
-      <option value="4">5th-6th</option>
-      <option value="5">7th-8th</option>
-      <option value="6">9th</option>
-      <option value="7">Assoc-acdm</option>
-      <option value="8">Assoc-voc</option>
-      <option value="9">Bachelors</option>
-      <option value="10">Doctorate</option>
-      <option value="11">HS-grad</option>
-      <option value="12">Masters</option>
-      <option value="13">Preschool</option>
-      <option value="14">Prof-school</option>
-      <option value="15">16 - Some-college</option>
-    </select>
-    <br>
-    <label for="martial_stat">Marital Status</label>
-    <select id="martial_stat" name="martial_stat">
-      <option value="0">divorced</option>
-      <option value="1">married</option>
-      <option value="2">not married</option>
-    </select>
-    <br>
-    <label for="occup">Occupation</label>
-    <select id="occup" name="occup">
-      <option value="0">Adm-clerical</option>
-      <option value="1">Armed-Forces</option>
-      <option value="2">Craft-repair</option>
-      <option value="3">Exec-managerial</option>
-      <option value="4">Farming-fishing</option>
-      <option value="5">Handlers-cleaners</option>
-      <option value="6">Machine-op-inspct</option>
-      <option value="7">Other-service</option>
-      <option value="8">Priv-house-serv</option>
-      <option value="9">Prof-specialty</option>
-      <option value="10">Protective-serv</option>
-      <option value="11">Sales</option>
-      <option value="12">Tech-support</option>
-      <option value="13">Transport-moving</option>
-    </select>
-    <br>
-    <label for="relation">Relationship</label>
-    <select id="relation" name="relation">
-      <option value="0">Husband</option>
-      <option value="1">Not-in-family</option>
-      <option value="2">Other-relative</option>
-      <option value="3">Own-child</option>
-      <option value="4">Unmarried</option>
-      <option value="5">Wife</option>
-    </select>
-    <br>
-    <label for="race">Race</label>
-    <select id="race" name="race">
-      <option value="0">Amer Indian Eskimo</option>
-      <option value="1">Asian Pac Islander</option>
-      <option value="2">Black</option>
-      <option value="3">Other</option>
-      <option value="4">White</option>
-    </select>
-    <br>
-    <label for="gender">Gender</label>
-    <select id="gender" name="gender">
-      <option value="0">Female</option>
-      <option value="1">Male</option>
-    </select>
-    <br>
-    <label for="c_gain">Capital Gain </label>
-    <input type="text" id="c_gain" name="c_gain">btw:[0-99999]
-    <br>
-    <label for="c_loss">Capital Loss </label>
-    <input type="text" id="c_loss" name="c_loss">btw:[0-4356]
-    <br>
-    <label for="hours_per_week">Hours per Week </label>
-    <input type="text" id="hours_per_week" name="hours_per_week">btw:[1-99]
-    <br>
-    <label for="native-country">Native Country</label>
-    <select id="native-country" name="native-country">
-      <option value="0">Cambodia</option>
-      <option value="1">Canada</option>
-      <option value="2">China</option>
-      <option value="3">Columbia</option>
-      <option value="4">Cuba</option>
-      <option value="5">Dominican Republic</option>
-      <option value="6">Ecuador</option>
-      <option value="7">El Salvadorr</option>
-      <option value="8">England</option>
-      <option value="9">France</option>
-      <option value="10">Germany</option>
-      <option value="11">Greece</option>
-      <option value="12">Guatemala</option>
-      <option value="13">Haiti</option>
-      <option value="14">Netherlands</option>
-      <option value="15">Honduras</option>
-      <option value="16">HongKong</option>
-      <option value="17">Hungary</option>
-      <option value="18">India</option>
-      <option value="19">Iran</option>
-      <option value="20">Ireland</option>
-      <option value="21">Italy</option>
-      <option value="22">Jamaica</option>
-      <option value="23">Japan</option>
-      <option value="24">Laos</option>
-      <option value="25">Mexico</option>
-      <option value="26">Nicaragua</option>
-      <option value="27">Outlying-US(Guam-USVI-etc)</option>
-      <option value="28">Peru</option>
-      <option value="29">Philippines</option>
-      <option value="30">Poland</option>
-      <option value="11">Portugal</option>
-      <option value="32">Puerto-Rico</option>
-      <option value="33">Scotland</option>
-      <option value="34">South</option>
-      <option value="35">Taiwan</option>
-      <option value="36">Thailand</option>
-      <option value="37">Trinadad&Tobago</option>
-      <option value="38">United States</option>
-      <option value="39">Vietnam</option>
-      <option value="40">Yugoslavia</option>
-    </select>
-    <br>
-    <input type="submit" value="Submit">
-  </form>
-</div>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<p style="text-align: center;"><strong>CLASSIFICATION PROBLEMS IN MACHINE LEARNING&nbsp;</strong></p>
+<p style="text-align: center;"><strong><img src="https://cdn-images-1.medium.com/max/1200/1*QXttMMjauSK-XJ04AJBYsg.png" alt="" width="287" height="191" /></strong></p>
+<ul style="list-style-type: circle;">
+<li style="text-align: left;"><strong>This app is a HEROKU hosted prediction model for estimating salary from demographic features?</strong></li>
+</ul>
+<p>&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li style="text-align: left;"><strong>The app implements Decision Tree supervised machine learning model. </strong></li>
+</ul>
+<p>&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li style="text-align: left;"><strong>The model leverages census data to predict individual income. The predicted income is classified as "Above" or "Below" the threshold value of "50K". </strong></li>
+</ul>
+<p>&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li style="text-align: left;"><strong>Data is sourced from UCI machine learning repository&nbsp;<a href="https://archive.ics.uci.edu/ml/datasets/adult">here</a>.</strong></li>
+</ul>
+<p>&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li><strong>The list below provides a definition of <a href="https://en.wikipedia.org/wiki/Feature_(machine_learning)">features</a> and permissible values.</strong></li>
+</ul>
+<table style="width: 530.6px; height: 210px; border-color: white; background-color: blue; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 155px; text-align: center;"><span style="color: #ffffff;"><strong>Feature Name</strong></span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;"><strong>Values</strong></span></td>
+<td style="width: 112.6px; text-align: center;"><span style="color: #ffffff;"><strong>Comments</strong></span></td>
+</tr>
+<tr>
+<td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Age</span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0 - 99</span></td>
+<td style="width: 112.6px; text-align: center;">&nbsp;</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 155px;"><span style="color: #ffffff;">Working Class</span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;">Federal-gov</span><br /><span style="color: #ffffff;">Local-gov</span><br /><span style="color: #ffffff;">Never-worked</span><br /><span style="color: #ffffff;">Private</span><br /><span style="color: #ffffff;">Self-emp-inc</span><br /><span style="color: #ffffff;">Self-emp-not-inc</span><br /><span style="color: #ffffff;">State-gov</span><br /><span style="color: #ffffff;">Without-pay</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 155px;"><span style="color: #ffffff;">Education</span></td>
+<td style="width: 245px;"><span style="color: #ffffff;">10th</span><br /><span style="color: #ffffff;">11th</span><br /><span style="color: #ffffff;">12th</span><br /><span style="color: #ffffff;">1st-4th</span><br /><span style="color: #ffffff;">5th-6th</span><br /><span style="color: #ffffff;">7th-8th</span><br /><span style="color: #ffffff;">9th</span><br /><span style="color: #ffffff;">Assoc-acdm</span><br /><span style="color: #ffffff;">Assoc-voc</span><br /><span style="color: #ffffff;">Bachelors</span><br /><span style="color: #ffffff;">Doctorate</span><br /><span style="color: #ffffff;">HS-grad</span><br /><span style="color: #ffffff;">Masters</span><br /><span style="color: #ffffff;">Preschool</span><br /><span style="color: #ffffff;">Prof-school</span><br /><span style="color: #ffffff;">16 - Some-colleg</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 155px;"><span style="color: #ffffff;">Marital Status</span></td>
+<td style="width: 245px;"><span style="color: #ffffff;">divorced</span><br /><span style="color: #ffffff;">married</span><br /><span style="color: #ffffff;">not married</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 155px;"><span style="color: #ffffff;">Occupation</span></td>
+<td style="width: 245px;"><span style="color: #ffffff;">Adm-clerical</span><br /><span style="color: #ffffff;">Armed-Forces</span><br /><span style="color: #ffffff;">Craft-repair</span><br /><span style="color: #ffffff;">Exec-managerial</span><br /><span style="color: #ffffff;">Farming-fishing</span><br /><span style="color: #ffffff;">Handlers-cleaners</span><br /><span style="color: #ffffff;">Machine-op-inspct</span><br /><span style="color: #ffffff;">Other-service</span><br /><span style="color: #ffffff;">Priv-house-serv</span><br /><span style="color: #ffffff;">Prof-specialty</span><br /><span style="color: #ffffff;">Protective-serv</span><br /><span style="color: #ffffff;">Sales</span><br /><span style="color: #ffffff;">Tech-support</span><br /><span style="color: #ffffff;">Transport-moving</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 155px;"><span style="color: #ffffff;">Relationship</span></td>
+<td style="width: 245px;"><span style="color: #ffffff;">Husband</span><br /><span style="color: #ffffff;">Not-in-family</span><br /><span style="color: #ffffff;">Other-relative</span><br /><span style="color: #ffffff;">Own-child</span><br /><span style="color: #ffffff;">Unmarried</span><br /><span style="color: #ffffff;">Wife</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 155px;"><span style="color: #ffffff;">Race</span></td>
+<td style="width: 245px;"><span style="color: #ffffff;">Amer Indian Eskimo</span><br /><span style="color: #ffffff;">Asian Pac Islander</span><br /><span style="color: #ffffff;">Black</span><br /><span style="color: #ffffff;">Other</span><br /><span style="color: #ffffff;">White</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Gender</span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;">Female</span><br /><span style="color: #ffffff;">Male</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Capital Gain</span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0-99999</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Capital Loss</span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0-99999</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Hours per Week</span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;">0-99</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 155px; text-align: center;"><span style="color: #ffffff;">Native Country</span></td>
+<td style="width: 245px; text-align: center;"><span style="color: #ffffff;">Cambodia</span><br /><span style="color: #ffffff;">Canada</span><br /><span style="color: #ffffff;">China</span><br /><span style="color: #ffffff;">Columbia</span><br /><span style="color: #ffffff;">Cuba</span><br /><span style="color: #ffffff;">Dominican Republic</span><br /><span style="color: #ffffff;">Ecuador</span><br /><span style="color: #ffffff;">El Salvadorr</span><br /><span style="color: #ffffff;">England</span><br /><span style="color: #ffffff;">France</span><br /><span style="color: #ffffff;">Germany</span><br /><span style="color: #ffffff;">Greece</span><br /><span style="color: #ffffff;">Guatemala</span><br /><span style="color: #ffffff;">Haiti</span><br /><span style="color: #ffffff;">Netherlands</span><br /><span style="color: #ffffff;">Honduras</span><br /><span style="color: #ffffff;">HongKong</span><br /><span style="color: #ffffff;">Hungary</span><br /><span style="color: #ffffff;">India</span><br /><span style="color: #ffffff;">Iran</span><br /><span style="color: #ffffff;">Ireland</span><br /><span style="color: #ffffff;">Italy</span><br /><span style="color: #ffffff;">Jamaica</span><br /><span style="color: #ffffff;">Japan</span><br /><span style="color: #ffffff;">Laos</span><br /><span style="color: #ffffff;">Mexico</span><br /><span style="color: #ffffff;">Nicaragua</span><br /><span style="color: #ffffff;">Outlying-US(Guam-USVI-etc)</span><br /><span style="color: #ffffff;">Peru</span><br /><span style="color: #ffffff;">Philippines</span><br /><span style="color: #ffffff;">Poland</span><br /><span style="color: #ffffff;">Portugal</span><br /><span style="color: #ffffff;">Puerto-Rico</span><br /><span style="color: #ffffff;">Scotland</span><br /><span style="color: #ffffff;">South</span><br /><span style="color: #ffffff;">Taiwan</span><br /><span style="color: #ffffff;">Thailand</span><br /><span style="color: #ffffff;">Trinadad&amp;Tobago</span><br /><span style="color: #ffffff;">United States</span><br /><span style="color: #ffffff;">Vietnam</span><br /><span style="color: #ffffff;">Yugoslavia</span></td>
+<td style="width: 112.6px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul style="list-style-type: circle;">
+<li><strong>The image below provides a sample HTTP REST request and response.&nbsp;</strong></li>
+</ul>
 </body>
 </html>
